@@ -1,16 +1,32 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useContext } from 'react';
+import { Link, Navigate } from 'react-router-dom';
 import logo from '../../../assests/logo.jfif'
+import { AuthContext } from '../../../Context/AuthProvider/AuthProvider';
 
 const Header = () => {
+
+  const{user,logout} =useContext(AuthContext)
     const manuItems=<>
     <li className='font-semibold'><Link to='/'>Home</Link></li>
     <li className='font-semibold'><Link to='/orders'>orders </Link></li>
+    <li className='font-semibold'><Link to='/service'>Services</Link></li>
+    <p>{user?.email}</p>
     </>
+  
+        const handleLogout=()=>{
+          logout()
+          .then(() => {
+              // Sign-out successful.
+              Navigate('/')
+            }).catch((error) => {
+              // An error happened.
+            })
+          }
+          
 
     return (
         <div>
-        <div className="navbar h-20 mb-12 pt-5 bg-blue-200">
+        <div className="navbar h-20 mb-12 pt-5 bg-blue-400">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -29,8 +45,12 @@ const Header = () => {
           </ul>
         </div>
         <div className="navbar-end">
-        <button className="btn btn-outline btn-error">Logout</button>
-        
+          {
+            user?.email ?
+            <button onClick={handleLogout}><p className='font-semibold'><Link to='/'>Logout</Link></p></button>
+            : <h1 className='font-semibold'><Link to='/login'>Login</Link></h1>
+          }
+       
         </div>
        
       </div>
