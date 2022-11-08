@@ -18,6 +18,7 @@ const Servicecard = ({service}) => {
            </PhotoProvider>
         <div className="card-body">
           <h2 className="card-title">{title}</h2>
+          <h2>{description.slice(0,97)}...</h2>
           <p className='text-orange-600 font-semibold'>Price:${price}</p>
           <div className="card-actions justify-end">
            

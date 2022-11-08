@@ -10,7 +10,16 @@ const Header = () => {
     <li className='font-semibold'><Link to='/'>Home</Link></li>
     <li className='font-semibold'><Link to='/service'>Services</Link></li>
     <li className='font-semibold'><Link to='/blog'>Blog</Link></li>
-    <p>{user?.email}</p>
+    {
+      user?.email ?
+      <>
+      <li className='font-semibold'><Link to='/review'>My Reviews</Link></li>
+      <li className='font-semibold'><Link to='/addservice'>Add Services</Link></li>
+      </>
+      :
+      <></>
+
+    }
     </>
   
         const handleLogout=()=>{
@@ -47,7 +56,10 @@ const Header = () => {
         <div className="navbar-end">
           {
             user?.email ?
+            <>
+            
             <button onClick={handleLogout}><p className='font-semibold'><Link to='/'>Logout</Link></p></button>
+            </>
             : <h1 className='font-semibold'><Link to='/login'>Login</Link></h1>
           }
        

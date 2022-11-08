@@ -1,4 +1,6 @@
+import Addservice from "../../Pages/Home/Addservice/Addservice";
 import Blog from "../../Pages/Home/Blog/Blog";
+import Myreviews from "../../Pages/Home/Myreviews/Myreviews";
 import Details from "../../Pages/Home/Services/Details";
 import Login from "../../Pages/Login/Login";
 import Service from "../../Pages/Service/Service";
@@ -36,6 +38,14 @@ const { default: Home } = require("../../Pages/Home/Home/Home");
         {
             path:'/blog',
             element:<Blog></Blog>
+        },
+        {
+            path:'/review',
+            element:<Myreviews></Myreviews>
+        },
+        {
+            path:'/addservice',
+            element:<Addservice></Addservice>
         }
        
     ]
