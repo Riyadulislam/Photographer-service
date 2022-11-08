@@ -8,8 +8,8 @@ const Header = () => {
   const{user,logout} =useContext(AuthContext)
     const manuItems=<>
     <li className='font-semibold'><Link to='/'>Home</Link></li>
-    <li className='font-semibold'><Link to='/orders'>orders </Link></li>
     <li className='font-semibold'><Link to='/service'>Services</Link></li>
+    <li className='font-semibold'><Link to='/blog'>Blog</Link></li>
     <p>{user?.email}</p>
     </>
   

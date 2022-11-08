@@ -1,3 +1,4 @@
+import Blog from "../../Pages/Home/Blog/Blog";
 import Details from "../../Pages/Home/Services/Details";
 import Login from "../../Pages/Login/Login";
 import Service from "../../Pages/Service/Service";
@@ -31,6 +32,10 @@ const { default: Home } = require("../../Pages/Home/Home/Home");
             path:'/details/:id',
             element:<Details></Details>,
             loader:({params})=>fetch(`http://localhost:5000/services/${params.id}`)
+        },
+        {
+            path:'/blog',
+            element:<Blog></Blog>
         }
        
     ]
