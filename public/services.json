@@ -1,0 +1,69 @@
+[
+    {
+       "service_id": "01",
+      "name": "Birthday Party photography",
+      "title": "Birthday photography package",
+      "description": "Photography is the art, application, and practice of creating durable images by recording light, either electronically by means of an image sensor, or chemically by means of a light-sensitive material such as photographic film  Glass plates were the medium  most original camera photography from the late s until the general introduction of flexible plastic films during the . Although the convenience of the film greatly popularized amateur photography, early films were somewhat more expensive and of markedly lower optical quality than their glass plate equivalents, and until the late s they were not available  the large formats preferred by most professional photographers, so the  medium did not immediately or completely replace the old. Because of the superior dimensional stability of glass, the use of plates some scientific applications, such as astrophotography, continued into the s, and  the niche field of laser holography, it has persisted into the  century",
+      "img": "https://pixfeeds.com/images/17/442545/1200-76361433-1st-birthday-invitation.jpg",
+      "rating": {
+        "number": 4.5,
+        "badge": "excellent"
+      },
+      "price": 10000
+    },
+    {  "service_id": "02",
+      "name": "Wedding Reception photography",
+      "title": "Wedding Reception photography package",
+      "description": "Photography is the art, application, and practice of creating durable images by recording light, either electronically by means of an image sensor, or chemically by means of a light-sensitive material such as photographic film  Glass plates were the medium  most original camera photography from the late s until the general introduction of flexible plastic films during the . Although the convenience of the film greatly popularized amateur photography, early films were somewhat more expensive and of markedly lower optical quality than their glass plate equivalents, and until the late s they were not available  the large formats preferred by most professional photographers, so the  medium did not immediately or completely replace the old. Because of the superior dimensional stability of glass, the use of plates some scientific applications, such as astrophotography, continued into the s, and  the niche field of laser holography, it has persisted into the  century",
+      "img": "https://varnam.my/wp-content/uploads/2020/07/4599df_6417566e7830480d9ed9ce6bddc6165c_mv2_d_3250_2167_s_2.jpg",
+      "rating": {
+        "number": 4.5,
+        "badge": "excellent"
+      },
+      "price": 20000
+    },
+    {  "service_id": "03",
+      "name": "Hanymoon photography",
+      "title": "Hanymoon photography package",
+      "description": "Photography is the art, application, and practice of creating durable images by recording light, either electronically by means of an image sensor, or chemically by means of a light-sensitive material such as photographic film  Glass plates were the medium  most original camera photography from the late s until the general introduction of flexible plastic films during the . Although the convenience of the film greatly popularized amateur photography, early films were somewhat more expensive and of markedly lower optical quality than their glass plate equivalents, and until the late s they were not available  the large formats preferred by most professional photographers, so the  medium did not immediately or completely replace the old. Because of the superior dimensional stability of glass, the use of plates some scientific applications, such as astrophotography, continued into the s, and  the niche field of laser holography, it has persisted into the  century",
+      "img": "https://tse2.mm.bing.net/th?id=OIP.Tf4wMTDu2u8S56X-DpOAugHaFC&pid=Api&P=0",
+      "rating": {
+        "number": 4.5,
+        "badge": "excellent"
+      },
+      "price": 30000
+    },
+    {  "service_id": "04",
+      "name": "Bridal photography",
+      "title": "Bridal photography package",
+      "description": "Photography is the art, application, and practice of creating durable images by recording light, either electronically by means of an image sensor, or chemically by means of a light-sensitive material such as photographic film  Glass plates were the medium  most original camera photography from the late s until the general introduction of flexible plastic films during the . Although the convenience of the film greatly popularized amateur photography, early films were somewhat more expensive and of markedly lower optical quality than their glass plate equivalents, and until the late s they were not available  the large formats preferred by most professional photographers, so the  medium did not immediately or completely replace the old. Because of the superior dimensional stability of glass, the use of plates some scientific applications, such as astrophotography, continued into the s, and  the niche field of laser holography, it has persisted into the  century",
+      "img": "https://tse1.mm.bing.net/th?id=OIP.c5cLyNieo6QkgH643tUl_gHaE8&pid=Api&P=0",
+      "rating": {
+        "number": 4.5,
+        "badge": "excellent"
+      },
+      "price": 40000
+    },
+    {  "service_id": "05",
+      "name": "Fashion photography",
+      "title": "Fashion photography package",
+      "description": "Photography is the art, application, and practice of creating durable images by recording light, either electronically by means of an image sensor, or chemically by means of a light-sensitive material such as photographic film  Glass plates were the medium  most original camera photography from the late s until the general introduction of flexible plastic films during the . Although the convenience of the film greatly popularized amateur photography, early films were somewhat more expensive and of markedly lower optical quality than their glass plate equivalents, and until the late s they were not available  the large formats preferred by most professional photographers, so the  medium did not immediately or completely replace the old. Because of the superior dimensional stability of glass, the use of plates some scientific applications, such as astrophotography, continued into the s, and  the niche field of laser holography, it has persisted into the  century",
+      "img": "https://tse4.explicit.bing.net/th?id=OIP.tsxkY-Fj6PSXmoa90wNsRwHaE7&pid=Api&P=0",
+      "rating": {
+        "number": 4.5,
+        "badge": "excellent"
+      },
+      "price": 35000
+    },
+    {  "service_id": "06",
+      "name": "Editorial photography",
+      "title": " Editorial photography package",
+      "description": "Photography is the art, application, and practice of creating durable images by recording light, either electronically by means of an image sensor, or chemically by means of a light-sensitive material such as photographic film  Glass plates were the medium  most original camera photography from the late s until the general introduction of flexible plastic films during the . Although the convenience of the film greatly popularized amateur photography, early films were somewhat more expensive and of markedly lower optical quality than their glass plate equivalents, and until the late s they were not available  the large formats preferred by most professional photographers, so the  medium did not immediately or completely replace the old. Because of the superior dimensional stability of glass, the use of plates some scientific applications, such as astrophotography, continued into the s, and  the niche field of laser holography, it has persisted into the  century",
+      "img": "https://tse1.mm.bing.net/th?id=OIP.9CVYkXOeJwum35-iWMODPwHaE7&pid=Api&P=0",
+      "rating": {
+        "number": 4.5,
+        "badge": "excellent"
+      },
+      "price": 25000
+    }
+  ]

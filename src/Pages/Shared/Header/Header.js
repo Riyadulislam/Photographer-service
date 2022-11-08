@@ -21,6 +21,7 @@ const Header = () => {
             </ul>
           </div>
          <img className='w-20 rounded-full' src={logo} alt="" />
+         <h1 className=' ml-5 text-3xl'>Weeding Photography</h1>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal p-0">
