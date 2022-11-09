@@ -9,9 +9,10 @@ const Services = () => {
         .then(data=>setServices(data))
     },[])
     return (
-        <div>
-            <h1 className='text-center text-4xl'>Services</h1>
-            <p className='text-center text-4xl'>Total 6 package</p>
+        <div className='mt-3'>
+            <h1 className='text-center text-4xl text-blue-500 font-bold'> List Of Services</h1>
+            <p className='text-center text-2xl text-blue-500'>I Delivared under the all Package</p>
+           
             <div className='gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 '>
             {
                 services.map(service=><Servicecard

@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Link, Navigate } from 'react-router-dom';
-import logo from '../../../assests/logo.jfif'
+import logo from '../../../assests/2.jfif'
 import { AuthContext } from '../../../Context/AuthProvider/AuthProvider';
 
 const Header = () => {
@@ -35,7 +35,7 @@ const Header = () => {
 
     return (
         <div>
-        <div className="navbar h-20 mb-12 pt-5 bg-blue-400">
+        <div className="navbar h-20 mb-12  bg-sky-400">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -45,8 +45,8 @@ const Header = () => {
               {manuItems}
             </ul>
           </div>
-         <img className='w-20 rounded-full' src={logo} alt="" />
-         <h1 className=' ml-5 text-3xl'>Weeding Photography</h1>
+         <img className='w-10 h-10 rounded-full' src={logo} alt="" />
+         <h1 className=' ml-5 text-3xl'>Wedding photographer</h1>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal p-0">
