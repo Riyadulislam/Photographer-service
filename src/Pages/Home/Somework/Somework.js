@@ -14,7 +14,7 @@ const Somework = () => {
             <p>In the journey of photography & Cinematography, I have taken a lot of significant shoots.
             <br></br> Here are some of my creative photography & Cinematography to look at !!</p>
         </div>
-        <div className='grid grid-cols-3 gap-4 mt-3'>
+        <div className='grid grid-cols-1 md:grid-cols-3 gap-4 mt-3'>
           {
             images.map(image=><img src={image.img}></img>)
           }
