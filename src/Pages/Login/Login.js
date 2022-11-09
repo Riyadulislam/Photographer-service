@@ -3,11 +3,13 @@ import { Link } from 'react-router-dom';
 import { GoogleAuthProvider } from "firebase/auth";
 
 import { AuthContext } from '../../Context/AuthProvider/AuthProvider';
+import usetitle from '../../Hooks/usetitle';
+import Usestitle from '../../Hooks/Usestitle';
 const Login = () => {
     const {loginUser,googleProviderLogin}=useContext(AuthContext)
     const provider = new GoogleAuthProvider();
-    
-   
+     Usestitle('login')
+  
     const handlelogin=(event)=>{
         event.preventDefault();
         const form=event.target;
