@@ -13,15 +13,15 @@ const Updatereview = () => {
         const messege=form.messege.value
         console.log(name,photo,rating,email,messege)
 
-        const Myreview = {
-            review: _id,
-            reviewName: title,
-            photo,
-            rating,
-            customer:name,
-            email,
-            messege
-          }
+        // const Myreview = {
+        //     review: _id,
+        //     reviewName: title,
+        //     photo,
+        //     rating,
+        //     customer:name,
+        //     email,
+        //     messege
+        //   }
         }
     return (
         <div>
@@ -31,7 +31,7 @@ const Updatereview = () => {
     <div className="modal modal-bottom sm:modal-middle">
      <div className="modal-box">
     <h3 className="font-bold text-lg">
-    <form  >
+    <form  onSubmit={handleaddreview} >
             <h1 className='text-4xl'></h1>
             <h1 className='text-3xl'> </h1>
             <div className=' grid grid-cols-1 md:grid-cols-2 gap-4 my-4'>
