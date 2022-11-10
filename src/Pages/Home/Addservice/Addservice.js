@@ -1,15 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Usestitle from '../../../Hooks/Usestitle';
 import {  toast } from 'react-toastify';
+import { AuthContext } from '../../../Context/AuthProvider/AuthProvider';
 
 const Addservice = () => {
     Usestitle('Addservices')
+    const{user}=useContext(AuthContext)
     const handleaddreview=(event)=>{
         event.preventDefault();
         const form = event.target;
         const title=form.title.value
         const img=form.photo.value
         const price=form.price.value;
+       
         const description=form.description.value
         console.log(title,price,description)
         const Myservice = {
@@ -17,6 +20,7 @@ const Addservice = () => {
             description,
             img,
             price,
+            
           }
 
         fetch('https://services-provider-server.vercel.app/services', {
@@ -50,7 +54,7 @@ const Addservice = () => {
                 <input name="title" type="text" placeholder="Tilte" className="input input-bordered w-full " />
                  <input type="text" name='photo'  placeholder="image" src=""  alt="" className="input input-bordered w-full "  />
                 <input name="price" type="text" placeholder="Price" className="input input-bordered w-full " />
-                <input name="email" type="text" placeholder="Your Email" readOnly className="input input-bordered w-full " />
+                <input name="email" defaultValue={user?.email} type="text" placeholder="Your Email" readOnly className="input input-bordered w-full " />
             </div>
             <textarea name="description" className="textarea textarea-bordered h-24 w-full" placeholder="Description"></textarea>
             <input  className="btn mb-2 mx-auto" type="submit" value="Add  Your Service" />
