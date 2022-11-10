@@ -9,7 +9,7 @@ const Oldreview = ({all}) => {
             <p className="mask mask-squircle w-12 h-12">
              <img src={photo} alt="Avatar Tailwind CSS Component" />
            </p>
-            <p className='text-blue-400'>{messege}</p>
+            <p className='text-blue-400'> Review:{messege}</p>
             <p>email:{email}</p>
             <p>Rating :{rating}</p>
             
