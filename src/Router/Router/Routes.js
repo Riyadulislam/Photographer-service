@@ -5,6 +5,7 @@ import Details from "../../Pages/Home/Services/Details";
 import Login from "../../Pages/Login/Login";
 import Service from "../../Pages/Service/Service";
 import Singup from "../../Pages/Singup/Singup";
+import Privateroute from "../PrivateRoute/Privateroute";
 
 const { createBrowserRouter } = require("react-router-dom");
 const { default: Main } = require("../../Layout/Main");
@@ -28,7 +29,7 @@ const { default: Home } = require("../../Pages/Home/Home/Home");
         },
         {
             path:'/service',
-            element:<Service></Service>
+            element:<Service> </Service>
         },
         {
             path:'/details/:id',
@@ -41,11 +42,11 @@ const { default: Home } = require("../../Pages/Home/Home/Home");
         },
         {
             path:'/review',
-            element:<Myreviews></Myreviews>
+            element:<Privateroute><Myreviews></Myreviews></Privateroute>
         },
         {
             path:'/addservice',
-            element:<Addservice></Addservice>
+            element:<Privateroute><Addservice></Addservice></Privateroute>
         }
        
     ]

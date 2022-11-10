@@ -1,14 +1,25 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { AuthContext } from '../../../Context/AuthProvider/AuthProvider';
 import Usestitle from '../../../Hooks/Usestitle';
 import Servicecard from './Servicecard';
 
+
 const Services = () => {
     const [services,setServices]=useState([])
+    
+   const {loading}=useContext(AuthContext)
+    
+   
    
     useEffect(()=>{
         fetch(`http://localhost:5000/services?home=${1}`)
         .then(res=>res.json())
-        .then(data=>setServices(data))
+        .then(data=>{
+            if(loading){
+                return <h1 className='text-5xl text-red-600'>loadingg.......</h1>
+            }
+            setServices(data)})
     },[])
     Usestitle('Services')
     return (
@@ -24,6 +35,9 @@ const Services = () => {
                 ></Servicecard>)
             }
             </div>
+           
+            
+            <Link to='/service'><h1 className='text-center text-2xl  text-blue-600 mt-5'>View All</h1></Link>
         </div>
     );
 };

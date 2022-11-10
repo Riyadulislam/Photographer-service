@@ -8,9 +8,6 @@ const Servicecard = ({service}) => {
     return (
         <div>
             <div className="card card-compact w-96 bg-base-100 shadow-xl p-4">
-        {/* <figure><img src={img} alt="Shoes" /></figure> */}
-       
-        
            <PhotoProvider>
            <PhotoView src={img}>
             <img src={img} alt="" />
@@ -27,10 +24,10 @@ const Servicecard = ({service}) => {
              
                 </button>
                 </Link>
-         
           </div>
         </div>
       </div>
+     
         </div>
     );
 };

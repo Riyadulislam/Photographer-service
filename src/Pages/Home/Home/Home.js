@@ -10,6 +10,7 @@ const Home = () => {
     Usestitle('Home')
     return (
         <div>
+            
             <Banner></Banner>
             <Services></Services>
             <Aboutme></Aboutme>  

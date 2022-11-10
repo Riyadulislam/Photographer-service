@@ -1,12 +1,13 @@
 import React, { useContext } from 'react';
 import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
 import { GoogleAuthProvider } from "firebase/auth";
+import { FaBeer,FaGoogle } from 'react-icons/fa';
 
 import { AuthContext } from '../../Context/AuthProvider/AuthProvider';
 import usetitle from '../../Hooks/usetitle';
 import Usestitle from '../../Hooks/Usestitle';
 const Login = () => {
-    const {loginUser,googleProviderLogin}=useContext(AuthContext)
+    const {loginUser,googleProviderLogin,loading}=useContext(AuthContext)
     const provider = new GoogleAuthProvider();
      Usestitle('login')
      const location=useLocation();
@@ -23,15 +24,49 @@ const Login = () => {
         loginUser(email,password)
         .then(result=>{
             const user=result.user;
-            navigate(from, { replace: true })
+            const currentUser={
+                email:user.email
+              }
+              console.log(currentUser)
+              fetch('http://localhost:5000/jwt',{
+                method:'POST',
+                headers:{
+                  'content-type':'application/json'
+                },
+                body:JSON.stringify(currentUser)
+              })
+              .then(res=>res.json())
+              .then(data=>{
+                console.log(data)
+                localStorage.setItem('service-token',data.token)
+                navigate(from, { replace: true })
+              })
+          
         })   
     }
     const handleGoogleLogin=()=>{
         googleProviderLogin(provider)
         .then(result=>{
+            
             const user=result.user;
-            console.log(user)
-            navigate(from, { replace: true })
+            const currentUser={
+                email:user.email
+              }
+              console.log(currentUser)
+              fetch('http://localhost:5000/jwt',{
+                method:'POST',
+                headers:{
+                  'content-type':'application/json'
+                },
+                body:JSON.stringify(currentUser)
+              })
+              .then(res=>res.json())
+              .then(data=>{
+                console.log(data)
+                localStorage.setItem('service-token',data.token)
+                navigate(from, { replace: true })
+              })
+            // navigate(from, { replace: true })
            
         })
         .catch(error=>{
@@ -64,10 +99,14 @@ const Login = () => {
         <input className="btn btn-primary" type="submit" value="login" />
         </div>
       </form>
-      <button  onClick={handleGoogleLogin} >Login With Google</button>
+      <div className='ml-20'>
+      <button  className="btn btn-active btn-primary" onClick={handleGoogleLogin} > Google<br></br><FaGoogle/></button>
+      </div>
+    
       <p className='text-center mb-4'>New Photography service <Link className='text-orange-600 font-semibold' to='/singup'>Singup</Link></p>
     </div>
   </div>
+    
 </div>
     );
 };

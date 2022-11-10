@@ -22,7 +22,7 @@ const Singledetails = ({service}) => {
               <h2>{description}</h2>
               <div className='flex justify-end'>
               <p className='text-orange-600 font-semibold'>Price:${price}</p>
-              <p className='text-orange-600 font-semibold'>Rating:{rating.number}</p>
+              <p className='text-orange-600 font-semibold'>Rating:{rating?.number}</p>
               </div>
               <div className="card-actions justify-end">
                
