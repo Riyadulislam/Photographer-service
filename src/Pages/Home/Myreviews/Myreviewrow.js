@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Myreviewrow = ({review, handleDelete}) => {
 
@@ -9,7 +10,7 @@ const Myreviewrow = ({review, handleDelete}) => {
    <tr>
      <th>
      <label>
-          <button  onClick={()=>handleDelete(_id)} className='btn btn-ghost'> X</button>
+          <button  onClick={()=>handleDelete(_id)} className='btn btn-active btn-primary"'> X</button>
           </label>
      </th>
      <td>
@@ -32,7 +33,12 @@ const Myreviewrow = ({review, handleDelete}) => {
      </td>
      <td>Rating:{rating}</td>
      <th>
-    
+     <label>
+        <button className='btn btn-active btn-primary'>
+            <Link to='/update'>Update</Link>
+            
+            </button>
+      </label>
      </th>
    </tr> 
 

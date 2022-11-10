@@ -9,7 +9,7 @@ const Myreviews = () => {
     Usestitle('Myreview')
     console.log(reviews)
    useEffect(()=>{
-    fetch(`http://localhost:5000/review?email=${user?.email}`,{
+    fetch(`https://services-provider-server.vercel.app/review?email=${user?.email}`,{
         headers:{
             authorization:`Bearer ${localStorage.getItem('service-token')}`
           }
@@ -31,7 +31,7 @@ const Myreviews = () => {
        const proceed= toast("Delete This Item")
     if(proceed)
     {
-     fetch(`http://localhost:5000/review/${id}`,{
+     fetch(`https://services-provider-server.vercel.app/review/${id}`,{
          method:'DELETE'
      })
      .then(res=>res.json())
@@ -57,13 +57,17 @@ const Myreviews = () => {
                   <tr>
                     <th>
                       <label>
-                      <button className='btn btn-ghost'> X</button>
+                      <button className='btn'> X</button>
                       </label>
                     </th>
                     <th>Photo & Name</th>
                     <th>Review</th>
                     <th>Rating Point</th>
-                    <th></th>
+                    <th>
+                    <label>
+                      <button className='btn '>Update</button>
+                      </label>
+                    </th>
                   </tr>
                   {
                     reviews.map(review=> < Myreviewrow

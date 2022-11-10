@@ -11,7 +11,7 @@ const Review = ({service,id}) => {
    const [allreview,setAllreview]=useState([])
     
     useEffect(()=>{
-        fetch(`http://localhost:5000/service-review?review=${id}`)
+        fetch(`https://services-provider-server.vercel.app/service-review?review=${id}`)
         .then(res=>res.json())
         .then(data=>{
             console.log(data)
@@ -40,7 +40,7 @@ const Review = ({service,id}) => {
             email,
             messege
           }
-        fetch('http://localhost:5000/review', {
+        fetch('https://services-provider-server.vercel.app/review', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
@@ -73,9 +73,9 @@ const Review = ({service,id}) => {
             <h1 className='text-3xl'> </h1>
             <div className=' grid grid-cols-1 md:grid-cols-2 gap-4 my-4'>
                 <input name="name" type="text" placeholder="First Name" className="input input-bordered w-full " />
-                 <input type="text" name='photo' src=""  alt="" className="input input-bordered w-full "  />
+                 <input type="text" name='photo' src="" placeholder="Photo Url" alt="" className="input input-bordered w-full "  />
                 <input name="rating" type="text" placeholder="Your Rating" className="input input-bordered w-full " />
-                <input name="email" type="text" placeholder="Your Email" readOnly className="input input-bordered w-full " />
+                <input name="email" defaultValue={user?.email} type="text" placeholder="Your Email" readOnly className="input input-bordered w-full " />
             </div>
             <textarea name="messege" className="textarea textarea-bordered h-24 w-full" placeholder="messege"></textarea>
             <input  className="btn mb-2" type="submit" value="Please your Review" />
