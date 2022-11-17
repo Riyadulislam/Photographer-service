@@ -60,9 +60,6 @@ const Review = ({service,id}) => {
             })
             .catch(er => console.error(er));
 
-            
-
-
     }
     return (
         <div>

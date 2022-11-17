@@ -3,6 +3,8 @@ import { AuthContext } from '../../../Context/AuthProvider/AuthProvider';
 
 const Updatereview = () => {
     const {user,_id,title}=useContext(AuthContext)
+    
+   
     const handleaddreview=(event)=>{
         event.preventDefault();
         const form = event.target;
@@ -26,7 +28,7 @@ const Updatereview = () => {
     return (
         <div>
            
-     <label htmlFor="my-modal-6" className="btn">open modal</label>
+     <label htmlFor="my-modal-6" className="btn">update</label>
      <input type="checkbox" id="my-modal-6" className="modal-toggle" />
     <div className="modal modal-bottom sm:modal-middle">
      <div className="modal-box">

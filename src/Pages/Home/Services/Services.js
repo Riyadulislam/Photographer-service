@@ -35,9 +35,9 @@ const Services = () => {
                 ></Servicecard>)
             }
             </div>
-           
-            
-            <Link to='/service'><h1 className='text-center text-2xl  text-blue-600 mt-5'>View All</h1></Link>
+            <div className='flex justify-center'>
+         <Link className='text-center' to='/service'><button className='btn btn-primary mt-5'>View All</button></Link>
+         </div>
         </div>
     );
 };

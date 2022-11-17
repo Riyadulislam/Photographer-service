@@ -5,7 +5,7 @@ import Myreviewrow from './Myreviewrow';
 import {  toast } from 'react-toastify';
 const Myreviews = () => {
     const {user,loading, logout}=useContext(AuthContext)
-    const [reviews,setReviews]=useState([])
+    const [reviews,setReviews]=useState()
     Usestitle('Myreview')
     console.log(reviews)
    useEffect(()=>{
@@ -51,7 +51,7 @@ const Myreviews = () => {
     return (
         <div>
             {
-                reviews?.length!==0 ? <div className="overflow-x-auto w-full">
+             reviews && reviews.length!==0 ? <div className="overflow-x-auto w-full">
                 <table className="table w-full"> 
                 <thead>
                   <tr>
@@ -82,7 +82,7 @@ const Myreviews = () => {
                 </tbody> 
               </table>
             </div> 
-                :<h1 className=' my-40 text-center text-5xl text-blue-600'>No reviews were added</h1>
+    :<h1 className=' my-40 text-center text-5xl text-blue-600'>No reviews were added</h1>
             
             
 

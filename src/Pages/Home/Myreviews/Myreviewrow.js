@@ -17,7 +17,7 @@ const Myreviewrow = ({review, handleDelete}) => {
        <div className="flex items-center space-x-3">
          <div className="avatar">
            <div className="mask mask-squircle w-12 h-12">
-             <img src={photo} alt="Avatar Tailwind CSS Component" />
+             <img src={photo} alt="Avatar Tailwind CSS Component"/>
            </div>
          </div>
          <div>
@@ -35,7 +35,8 @@ const Myreviewrow = ({review, handleDelete}) => {
      <th>
      <label>
         <button className='btn btn-active btn-primary'>
-            <Link to='/update'>Update</Link>
+            <Link to='/update'>
+                Update</Link>
             
             </button>
       </label>

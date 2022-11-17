@@ -18,6 +18,7 @@ const AuthProvider = ({children}) => {
           return signInWithEmailAndPassword(auth, email, password)
     }
     const googleProviderLogin=(provider)=>{
+        setLoading(true)
         return signInWithPopup(auth, provider)
     }
     const logout=()=>{

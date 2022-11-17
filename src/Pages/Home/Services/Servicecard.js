@@ -19,9 +19,7 @@ const Servicecard = ({service}) => {
           <p className='text-orange-600 font-semibold'>Price:${price}</p>
           <div className="card-actions justify-end">
            
-          <Link to={`/details/${_id}`}>   <button className="btn btn-primary">
-                 View Details
-             
+      <Link to={`/details/${_id}`}><button className="btn btn-primary">View Details
                 </button>
                 </Link>
           </div>
